@@ -1,6 +1,7 @@
 'use strict';
 const fs = require('fs');
 var path = require('path');
+require('dotenv').config();
 
 var dbm;
 var type;
@@ -33,7 +34,7 @@ exports.up = function(db) {
         let sql = fs.readFileSync(`${baseFolder}/${file}`, 'utf8');
         db.runSql(sql);
         console.log('Ok........');
-    }		
+    }
     return db.runSql('COMMIT');    
   } catch (err) {
     console.error('Fail......');

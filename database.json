@@ -1,5 +1,5 @@
 {
-    "defaultEnv": "dev",
+    "defaultEnv": {"ENV": "MIGRATION_ENV"},
     "dev": {
         "driver": "pg",
         "user": "postgres",
