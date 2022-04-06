@@ -1,0 +1,10 @@
+insert into parametro values(1, '', 'fondoiniciosesion.jpg', 'FONDOINICIOSESION', true);
+insert into parametro values(2, '', 'Bienvenido a Gym-Up!_Gestionar tu gimnasio nunca había sido tan facil', 'CONCEPTOSLIDE', true);
+insert into parametro values(3, '', 'Centralización_de la información de tus usuarios', 'CONCEPTOSLIDE', true);
+insert into parametro values(4, '', 'Muestrale la evolución_del plan de entrenamiento a tus clientes', 'CONCEPTOSLIDE', true);
+insert into parametro values(5, '', 'Reduce los tiempos_en la gestión de tus usuarios', 'CONCEPTOSLIDE', true);
+insert into parametro values(6, 'KILOGRAMOS', 'KG', 'MEDIDAPESO', true);
+insert into parametro values(7, 'LIBRAS', 'LB', 'MEDIDAPESO', true);
+insert into parametro values(8, 'SEGUNDOS', 'SEG', 'MEDIDATIEMPO', true);
+insert into parametro values(9, 'MINUTOS', 'MIN', 'MEDIDATIEMPO', true);
+insert into parametro values(10, 'HORAS', 'HORAS', 'MEDIDATIEMPO', true);
