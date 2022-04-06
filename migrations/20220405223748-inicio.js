@@ -1,4 +1,6 @@
 'use strict';
+const fs = require('fs');
+var path = require('path');
 
 var dbm;
 var type;
