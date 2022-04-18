@@ -49,6 +49,7 @@ exports.down = function(db) {
 	    DO $$ DECLARE
 	    BEGIN
         DROP TABLE IF EXISTS auth;
+        DROP TABLE IF EXISTS empresa;
         DROP TABLE IF EXISTS parametro;
         DROP TABLE IF EXISTS mensaje;
 	    END $$;
