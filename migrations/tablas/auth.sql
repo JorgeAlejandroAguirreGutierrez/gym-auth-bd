@@ -3,6 +3,6 @@ CREATE TABLE auth(
    identificacion       varchar NOT NULL,
    contrasena           varchar NOT NULL,
    activo               boolean NOT NULL,
-   empresa_id              bigint,
+   empresa_id           bigint,
    PRIMARY KEY (id)
 );
