@@ -19,8 +19,16 @@ exports.setup = function(options, seedLink) {
 
 exports.up = function(db) {
   try {
-	  let baseFolder = path.join(__dirname, 'tablas');
+    let baseFolder = path.join(__dirname, 'secuencias');
     let files = fs.readdirSync(baseFolder);
+    for (let file of files) {
+        console.log(file);
+        let sql = fs.readFileSync(`${baseFolder}/${file}`, 'utf8');
+        db.runSql(sql);
+        console.log('Ok........');
+    }
+	  baseFolder = path.join(__dirname, 'tablas');
+    files = fs.readdirSync(baseFolder);
     for (let file of files) {
         console.log(file);
         let sql = fs.readFileSync(`${baseFolder}/${file}`, 'utf8');
@@ -52,6 +60,12 @@ exports.down = function(db) {
         DROP TABLE IF EXISTS empresa;
         DROP TABLE IF EXISTS parametro;
         DROP TABLE IF EXISTS mensaje;
+
+        DROP SEQUENCE IF EXISTS auth_sequence;
+        DROP SEQUENCE IF EXISTS empresa_sequence;
+        DROP SEQUENCE IF EXISTS mensaje_sequence;
+        DROP SEQUENCE IF EXISTS parametro_sequence;
+
 	    END $$;
 	  `);
 	  return db.runSql('COMMIT');

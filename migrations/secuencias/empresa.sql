@@ -1,0 +1,3 @@
+CREATE SEQUENCE empresa_sequence
+INCREMENT 1
+START 1;
