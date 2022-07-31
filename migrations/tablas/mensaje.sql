@@ -1,5 +1,5 @@
 CREATE TABLE mensaje(
-   id                   bigint NOT NULL DEFAULT NEXTVAL('mensajesequence'),
+   id                   bigint NOT NULL DEFAULT NEXTVAL('mensaje_sequence'),
    nombre               varchar NOT NULL,
    celular              varchar NOT NULL,
    correo               varchar NOT NULL,
