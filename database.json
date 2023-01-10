@@ -10,10 +10,10 @@
     },
     "prod": {
         "driver": "pg",
-        "user": "khmwtdjshehvrx",
-        "password": "b0138239a4737804f5fe65b6406eb121822174cce8828e8855fbb69fd185625a",
-        "host": "ec2-18-234-17-166.compute-1.amazonaws.com",
-        "database": "dana1g26palio2",
+        "user": "vcgnggnq",
+        "password": "XH8xToQ_vWFzCpVE6xioA7wBw-yehDpM",
+        "host": "peanut.db.elephantsql.com",
+        "database": "vcgnggnq",
         "port": "5432",
         "ssl": {
       		"rejectUnauthorized": false

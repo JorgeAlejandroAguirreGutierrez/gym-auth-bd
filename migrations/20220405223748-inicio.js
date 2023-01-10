@@ -35,14 +35,14 @@ exports.up = function(db) {
         db.runSql(sql);
         console.log('Ok........');
     }
-    baseFolder = path.join(__dirname, 'datos');
-    files = fs.readdirSync(baseFolder);
-    for (let file of files) {
-        console.log(file);
-        let sql = fs.readFileSync(`${baseFolder}/${file}`, 'utf8');
-        db.runSql(sql);
-        console.log('Ok........');
-    }
+    //baseFolder = path.join(__dirname, 'datos');
+    //files = fs.readdirSync(baseFolder);
+    //for (let file of files) {
+    //    console.log(file);
+    //    let sql = fs.readFileSync(`${baseFolder}/${file}`, 'utf8');
+    //    db.runSql(sql);
+    //    console.log('Ok........');
+    //}
     return db.runSql('COMMIT');    
   } catch (err) {
     console.error('Fail......');
